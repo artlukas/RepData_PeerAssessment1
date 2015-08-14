@@ -16,7 +16,6 @@ data <- read.csv(datafile, header=TRUE)
 ```{r echo = TRUE}
 # Calculate the total number of steps taken per day
 dates <- as.Date(data[[2]])
-   
    uniqueDates <- unique(dates)
    stepsTable <- data.frame()
    for (x in uniqueDates){
